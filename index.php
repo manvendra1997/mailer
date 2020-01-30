@@ -5,7 +5,7 @@ if(!empty($_POST["submit"])) {
 	$phone =$_POST["phone"];
 	$subject = "Response From:" . $_POST["phone"] . ".\r\n";
 	$content = $_POST["content"];
-	$toEmail = "yourmail@mail.com"; //put your mail here
+	$toEmail = "manvendramonu445@gmail.com"; //put your mail here
 	$mailHeaders = "From: " . $_POST["userName"] . "<". $email.">.\r\n";
 	if(mail($toEmail, $subject, $content, $mailHeaders)) {
 	$message = "<h3 style=color:green;>".$name.",Thank you !</h3>";
